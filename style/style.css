@@ -1,0 +1,225 @@
+/* need to figure this out, right now brute-forcing over theme styles */
+body.post-type-archive-uwopeople .site-content,
+body.single-uwopeople .site-content,
+body.tax-uwopeople_classification .site-content
+{ float: none !important; width: 100% !important; }
+
+body.post-type-archive-uwopeople .entry-title, body.tax-uwopeople_classification .entry-title {
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: normal;
+    margin: 0 0 20px;
+    padding: 0 0 10px;
+    font-size: 30px;
+}
+
+.person-container, .single-person-container {
+    text-align: justify;
+    width: 100%;
+}
+
+.person {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	min-width: 175px;
+	padding: 1.5% 0;
+	box-sizing: border-box;
+	margin: 0 0.75% 3.5%;
+	outline: none;
+	font-size: 14px;
+	width: 18.5%;
+}
+
+.person:hover { background-color: #f2f2f2;}
+
+.person a { outline: none 0; }
+
+.person a:hover { text-decoration: none; }
+
+.person-name {
+    font-weight: bold;
+    color: #000000;
+    padding-top: 5px;
+    display: block;
+}
+
+.person-title {
+    color: #333333;
+    display: block;
+}
+
+.uwopeople-bio {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 715px;
+}
+
+.uwopeople-bio p {
+    margin-top: 4%;
+}
+
+.uwopeople-details {
+    display: inline-block;
+    width: 25%;
+    max-width: 250px;
+    min-width: 225px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 2% 2% 0;
+}
+
+.uwopeople-image {
+    margin-bottom: 8%;
+}
+
+.uwopeople-contact {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.uwopeople-email {
+    display: block;
+}
+
+.uwopeople-jobtitle {
+    font-weight: bold;
+}
+
+.person-hidden {
+    display: none;
+}
+
+/* List View */
+.list .person {
+	display: block;
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+	min-width: 175px;
+	padding: 1.25%;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 14px;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.list .person:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.list .person a:hover {
+	cursor: default;
+}
+
+.list .person img {
+	display: none;
+}
+
+.list .person .person-meta { float: left; width: 20%; padding-right: 1%; }
+.list .person .person-hidden { float: left; width: 80%; }
+
+.list .person .uwopeople-department,
+.list .person .uwopeople-email, 
+.list .person .uwopeople-phone, 
+.list .person .uwopeople-building {
+	float: left;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+.list .person .person-name {
+	padding-top: 0;
+}
+
+.list .person .person-title {
+	font-style: italic;
+}
+
+.list .person .uwopeople-department {
+	width: 35%;
+	padding: 0 1%;
+}
+
+.list .person .uwopeople-email {
+	white-space: nowrap;
+	width: 20%;
+	padding: 0 1%;
+}
+
+.list .person .uwopeople-email a:hover {
+	cursor: pointer;
+}
+
+.list .person .uwopeople-phone {
+	white-space: nowrap;
+	width: 15%;
+	padding: 0 1%;
+}
+
+.list .person .uwopeople-building {
+	width: 30%;
+	padding-left: 1%;
+}
+
+.clear { clear: both; height: 0; margin: 0; padding: 0; line-height: 0; }
+
+@media (max-width: 985px) { .person { margin: 0 2.5% 3.5%; } }
+
+@media (max-width: 960px) {
+	.list .person { padding: 20px 0; }
+	.list .person .person-name, 
+	.list .person .person-title, 
+	.list .person .uwopeople-email, 
+	.list .person .uwopeople-phone, 
+	.list .person .uwopeople-building {
+		vertical-align: top;
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+
+	.list .person .person-meta,
+	.list .person .person-hidden { float: none; width: 100%; padding: 0; }
+	.list .person .uwopeople-department,
+	.list .person .uwopeople-email,
+	.list .person .uwopeople-phone,
+	.list .person .uwopeople-building { width: 100%; padding: 0; }
+}
+
+@media (max-width: 700px) {
+    .person-container { text-align: center; }
+
+    .person { margin: 3.5%; }
+
+    .uwopeople-details { text-align: left; }
+}
+
+@media (max-width: 400px) {
+    .person-container { text-align: left; }
+
+   	.person { margin: 3.5%; text-align: left; }
+
+    .post-type-archive-uwopeople .site-content .person img { display: none; }
+
+    .person-hidden { display: block; }
+
+    .person:hover { background-color: #ffffff; color: #000000; }
+}
+
+@media (min-width: 960px) {
+
+	.list .person .uwopeople-department:after, 
+	.list .person .uwopeople-email:after, 
+	.list .person .uwopeople-phone:after, 
+	.list .person .uwopeople-building:after { content:'\0000a0'; }
+
+}

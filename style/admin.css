@@ -1,0 +1,4 @@
+/* Style the admin menu with the Dashicon */
+#adminmenu .menu-icon-uwopeople div.wp-menu-image:before {
+	content: "\f307";
+}
