@@ -3,7 +3,7 @@
 Plugin Name: UWO People
 Plugin URI: http://uwm.edu/wordpress
 Description: Create your staff/faculty profiles and directory!
-Author: Ricky Kaja, Regan Jacobson, Christopher Maio, Michael Schuett, Jeremy Streich, Tamara Edmond, Mark Fairweather
+Author: Ricky Kaja, Regan Jacobson, Christopher Maio, Michael Schuett, Jeremy Streich, Tamara Edmond, Mark Fairweather, Joseph Kerkhof
 Version: 0.2
 Author URI: http://uwm.edu/wordpress
 */

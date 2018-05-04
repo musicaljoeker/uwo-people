@@ -1,11 +1,11 @@
 === UWO People ===
-Contributors: rickyk, mschuett, cjmaio, jacobsr, streich, tedmond, fairweat
+Contributors: rickyk, mschuett, cjmaio, jacobsr, streich, tedmond, fairweat, kerkhofj
 Tags: Staff, People, Directory, Staff Directory
 Requires at least: 3.5.1
 Tested up to: 3.9.1
 Stable tag: trunk
 License: MIT
-License URI: https://uwo.edu/wordpress
+License URI: https://uwm.edu/wordpress
 
 Max 150 char short description.
 
@@ -21,7 +21,7 @@ Q: Can I hook into your plugin?
 A: Current hooks that we have added
    uwopeople-edit-button-title // Change output of edit.php Load ODS Button.
    uwopeople-ods-url // Change the url that is being used to populate user information.
-   uwopeople-ods-script // Change the script that is being used to populate the ods infromation.
+   uwopeople-ods-script // Change the script that is being used to populate the ods information.
    uwopeople-style // Change out the default style sheet being used by the plugin.
    uwopeople-ajax-override // Replace the entire function being used to grab data with your own custom one.
 Q: Can i overwrite the default style of this plugin?
