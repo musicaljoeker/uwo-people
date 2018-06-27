@@ -22,7 +22,7 @@ $uwo_filter = '
           </div>
                 <ul class="options">';
 
-  if ($people_archive_listing == "gridlist") { $uwo_filter .= '<li><ul class="view"><li class="view-grid view-active">Grid</li><li class="view-list">List</li></ul></li>'; }
+  if ($people_archive_listing == "gridlist") { $uwo_filter .= '<li><ul class="view" style="padding: 0 !important;"><li class="view-grid view-active">Grid</li><li class="view-list">List</li></ul></li>'; }
 
   if(!empty($get_uwopeople_cats) && !is_wp_error($get_uwopeople_cats)) { $uwo_filter .= '<li class="filter">Filters</li>'; }
   $uwo_filter .= '</ul></div>';

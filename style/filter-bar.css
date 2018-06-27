@@ -45,6 +45,7 @@
     margin: 0;
     padding: 0;
     width: 300px;
+    list-style-type: none !important;
 }
 
 .filter-bar .options > li {
@@ -178,6 +179,7 @@
     list-style-position: outside;
     margin: 0;
     padding: 0;
+    list-style-type: none !important;
 }
 
 .filter-bar .view li {
@@ -220,6 +222,12 @@
 .searchwrap {
     position: relative;
     width: 300px;
+    display: inline-block;
+}
+
+.search-field-people {
+    padding: 15px 20px;
+    font-size: 100%;
 }
 
 @media (max-width: 767px) {
