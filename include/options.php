@@ -173,7 +173,11 @@ class UWOPeopleSettingsPage
             'type' => 'note',
             'name' => 'disable_links="true"',
             'desc' => 'The people directory created will not link to the profile pages.'
-
+        ) );
+        $shortcodesTab->createOption( array(
+            'type' => 'note',
+            'name' => 'open_in_new_tab="false"',
+            'desc' => 'When set to true, the links to profile pages will open in a new tab. Default is set to false.'
         ) );
 
         $shortcodesTab->createOption( array(

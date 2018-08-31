@@ -78,7 +78,17 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
     if(!isset($disable_links) || !$disable_links)
     {
-        $the_loop .= '<a href="' . $url_to_use . '">';
+        if(isset($is_target_blank))
+        {
+            if($is_target_blank)
+            {
+                $the_loop .= '<a target="_blank" href="' . $url_to_use . '">';
+            }
+            else
+            {
+                $the_loop .= '<a href="' . $url_to_use . '">';
+            }
+        }
     }
     else
     {

@@ -62,6 +62,7 @@ function uwopeople_func( $atts )
         'order_dir' => null,
         'display_name' => null,
         'disable_links' => false,
+        'open_in_new_tab' => true,
         'layout'=>'gridlist'
     ), $atts ) );
 
@@ -70,6 +71,7 @@ function uwopeople_func( $atts )
     $atts['order_dir'] = ( isset( $atts['order_dir'] ) ) ? sanitize_orderdir( $atts['order_dir'] ) : null;
     $atts['display_name'] = ( isset( $atts['display_name'] ) ) ? sanitize_displayname( $atts['display_name'] ) : null;
     $disable_links = (isset($atts['disable_links']) && $atts['disable_links'] === 'true' ? true : false);
+    $is_target_blank = (isset($atts['open_in_new_tab']) && $atts['open_in_new_tab'] === 'true' ? true : false);
     
 
     // We want to call either the person or directory partial, depending on
