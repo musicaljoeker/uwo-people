@@ -1,20 +1,24 @@
 /* need to figure this out, right now brute-forcing over theme styles */
 body.post-type-archive-uwopeople .site-content,
 body.single-uwopeople .site-content,
-body.tax-uwopeople_classification .site-content
-{ float: none !important; width: 100% !important; }
-
-body.post-type-archive-uwopeople .entry-title, body.tax-uwopeople_classification .entry-title {
-    border-bottom: 1px solid #CCCCCC;
-    font-weight: normal;
-    margin: 0 0 20px;
-    padding: 0 0 10px;
-    font-size: 30px;
+body.tax-uwopeople_classification .site-content {
+	float: none !important;
+	width: 100% !important;
 }
 
-.person-container, .single-person-container {
-    text-align: justify;
-    width: 100%;
+body.post-type-archive-uwopeople .entry-title,
+body.tax-uwopeople_classification .entry-title {
+	border-bottom: 1px solid #CCCCCC;
+	font-weight: normal;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	font-size: 30px;
+}
+
+.person-container,
+.single-person-container {
+	text-align: justify;
+	width: 100%;
 }
 
 .person {
@@ -30,69 +34,71 @@ body.post-type-archive-uwopeople .entry-title, body.tax-uwopeople_classification
 	width: 18.5%;
 }
 
-.person:hover { background-color: #f2f2f2;}
+.person:hover {
+	background-color: #f2f2f2;
+}
 
-.person a { outline: none 0; }
+.person a {
+	outline: none 0;
+}
 
-.person a:hover { text-decoration: none; }
+.person a:hover {
+	text-decoration: none;
+}
 
 .person-name {
-    font-weight: bold;
-    color: #000000;
-    padding-top: 5px;
-    display: block;
+	font-weight: bold;
+	color: #000000;
+	padding-top: 5px;
+	display: block;
 }
 
 .person-title {
-    color: #333333;
-    display: block;
+	color: #333333;
+	display: block;
 }
 
 .uwopeople-bio {
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
-    box-sizing: border-box;
-    width: 75%;
-    max-width: 715px;
-}
-
-.uwopeople-bio p {
-    margin-top: 4%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 75%;
+	max-width: 715px;
 }
 
 .uwopeople-details {
-    display: inline-block;
-    width: 25%;
-    max-width: 250px;
-    min-width: 225px;
-    text-align: center;
-    vertical-align: top;
-    box-sizing: border-box;
-    padding: 0 2% 2% 0;
+	display: inline-block;
+	width: 25%;
+	max-width: 250px;
+	min-width: 225px;
+	text-align: center;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding: 0 2% 2% 0;
 }
 
 .uwopeople-image {
-    margin-bottom: 8%;
+	margin-bottom: 8%;
 }
 
 .uwopeople-contact {
-    background-color: #f2f2f2;
-    font-size: 14px;
-    padding: 20px;
-    border-radius: 4px;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	padding: 20px;
+	border-radius: 4px;
 }
 
 .uwopeople-email {
-    display: block;
+	display: block;
 }
 
 .uwopeople-jobtitle {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .person-hidden {
-    display: none;
+	display: none;
 }
 
 /* List View */
@@ -124,12 +130,20 @@ body.post-type-archive-uwopeople .entry-title, body.tax-uwopeople_classification
 	display: none;
 }
 
-.list .person .person-meta { float: left; width: 20%; padding-right: 1%; }
-.list .person .person-hidden { float: left; width: 80%; }
+.list .person .person-meta {
+	float: left;
+	width: 20%;
+	padding-right: 1%;
+}
+
+.list .person .person-hidden {
+	float: left;
+	width: 80%;
+}
 
 .list .person .uwopeople-department,
-.list .person .uwopeople-email, 
-.list .person .uwopeople-phone, 
+.list .person .uwopeople-email,
+.list .person .uwopeople-phone,
 .list .person .uwopeople-building {
 	float: left;
 	vertical-align: top;
@@ -170,16 +184,29 @@ body.post-type-archive-uwopeople .entry-title, body.tax-uwopeople_classification
 	padding-left: 1%;
 }
 
-.clear { clear: both; height: 0; margin: 0; padding: 0; line-height: 0; }
+.clear {
+	clear: both;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
 
-@media (max-width: 985px) { .person { margin: 0 2.5% 3.5%; } }
+@media (max-width: 985px) {
+	.person {
+		margin: 0 2.5% 3.5%;
+	}
+}
 
 @media (max-width: 960px) {
-	.list .person { padding: 20px 0; }
-	.list .person .person-name, 
-	.list .person .person-title, 
-	.list .person .uwopeople-email, 
-	.list .person .uwopeople-phone, 
+	.list .person {
+		padding: 20px 0;
+	}
+
+	.list .person .person-name,
+	.list .person .person-title,
+	.list .person .uwopeople-email,
+	.list .person .uwopeople-phone,
 	.list .person .uwopeople-building {
 		vertical-align: top;
 		display: block;
@@ -188,38 +215,65 @@ body.post-type-archive-uwopeople .entry-title, body.tax-uwopeople_classification
 	}
 
 	.list .person .person-meta,
-	.list .person .person-hidden { float: none; width: 100%; padding: 0; }
+	.list .person .person-hidden {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
 	.list .person .uwopeople-department,
 	.list .person .uwopeople-email,
 	.list .person .uwopeople-phone,
-	.list .person .uwopeople-building { width: 100%; padding: 0; }
+	.list .person .uwopeople-building {
+		width: 100%;
+		padding: 0;
+	}
 }
 
 @media (max-width: 700px) {
-    .person-container { text-align: center; }
+	.person-container {
+		text-align: center;
+	}
 
-    .person { margin: 3.5%; }
+	.person {
+		margin: 3.5%;
+	}
 
-    .uwopeople-details { text-align: left; }
+	.uwopeople-details {
+		text-align: left;
+	}
 }
 
 @media (max-width: 400px) {
-    .person-container { text-align: left; }
+	.person-container {
+		text-align: left;
+	}
 
-   	.person { margin: 3.5%; text-align: left; }
+	.person {
+		margin: 3.5%;
+		text-align: left;
+	}
 
-    .post-type-archive-uwopeople .site-content .person img { display: none; }
+	.post-type-archive-uwopeople .site-content .person img {
+		display: none;
+	}
 
-    .person-hidden { display: block; }
+	.person-hidden {
+		display: block;
+	}
 
-    .person:hover { background-color: #ffffff; color: #000000; }
+	.person:hover {
+		background-color: #ffffff;
+		color: #000000;
+	}
 }
 
 @media (min-width: 960px) {
 
-	.list .person .uwopeople-department:after, 
-	.list .person .uwopeople-email:after, 
-	.list .person .uwopeople-phone:after, 
-	.list .person .uwopeople-building:after { content:'\0000a0'; }
-
+	.list .person .uwopeople-department:after,
+	.list .person .uwopeople-email:after,
+	.list .person .uwopeople-phone:after,
+	.list .person .uwopeople-building:after {
+		content: '\0000a0';
+	}
 }
