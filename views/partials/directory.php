@@ -78,16 +78,15 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
     if(!isset($disable_links) || !$disable_links)
     {
-        if(isset($is_target_blank))
+        if(!isset($is_target_blank) || !$is_target_blank)
         {
-            if($is_target_blank)
-            {
-                $the_loop .= '<a target="_blank" href="' . $url_to_use . '">';
-            }
-            else
-            {
-                $the_loop .= '<a href="' . $url_to_use . '">';
-            }
+            // link should not open in new tab
+            $the_loop .= '<a href="' . $url_to_use . '">';
+        }
+        else
+        {
+            // link should open in new tab
+            $the_loop .= '<a target="_blank" href="' . $url_to_use . '">';
         }
     }
     else
