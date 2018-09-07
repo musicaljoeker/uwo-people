@@ -6,9 +6,11 @@ Template Name: UWO People Profile Directory
 get_header();
 ?>
 
-<div id="content" class="content-area">
-    <div id="primary" class="site-content" role="main">
-    <h1 class="entry-title">People Directory</h1>
+<div class="et_pb_section">
+  <div class="et_pb_row">
+    <div id="content" class="content-area">
+      <div id="primary" class="site-content" role="main">
+      <h1 class="entry-title">People Directory</h1>
 
 <?php
 
@@ -33,7 +35,9 @@ get_header();
 		
 ?>
         
-    </div><!-- #primary -->
-</div><!-- #content -->
+      </div><!-- #primary -->
+    </div><!-- #content -->
+  </div><!-- .et_pb_row -->
+</div><!-- .et_pb_section -->
 
 <?php get_footer(); ?>
